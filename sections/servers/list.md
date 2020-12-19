@@ -13,3 +13,4 @@ description: List all currently online servers.
 ### Response
 
 `{"servers":[...],"total_players":(...),"total_servers":(...)}`
+
