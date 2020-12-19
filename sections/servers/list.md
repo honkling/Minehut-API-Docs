@@ -8,7 +8,7 @@ description: List all currently online servers.
 
 ### URL Path
 
-`/servers`
+GET `/servers`
 
 ### Response
 

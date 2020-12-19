@@ -18,3 +18,9 @@ Currently, there is not a good way to login programmatically, so you will need t
 6. Now, when making a request to an API endpoint that requires authorization, pass your token as the `authorization` header, and your session id as the `x-session-id` header.
 7. If all has been done correctly, you should now be authorized.
 
+{% hint style="info" %}
+Tokens and session ids expire whenever you login or logout of your account.
+{% endhint %}
+
+
+
