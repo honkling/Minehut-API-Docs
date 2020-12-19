@@ -31,4 +31,5 @@
   * [Delete Backup](sections/server/delete-backup.md)
   * [Reset Server](sections/server/reset-server.md)
   * [Repair Server](sections/server/repair-server.md)
-
+* [File](sections/file/README.md)
+ * [List directory](sections/file/list.md)
