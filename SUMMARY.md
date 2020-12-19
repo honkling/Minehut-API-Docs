@@ -32,4 +32,11 @@
   * [Reset Server](sections/server/reset-server.md)
   * [Repair Server](sections/server/repair-server.md)
 * [File](sections/file/README.md)
- * [List directory](sections/file/list.md)
+  * [List directory](sections/file/list-directory.md)
+  * [Create Folder](sections/file/create-folder.md)
+  * [Edit File](sections/file/edit-file.md)
+  * [Delete File](sections/file/delete-file.md)
+  * [Delete Folder](sections/file/delete-folder.md)
+  * [Upload File](sections/file/upload-file.md)
+  * [Upload World](sections/file/upload-world.md)
+
