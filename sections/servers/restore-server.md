@@ -18,7 +18,5 @@ Yes.
 
 `{"backup_id":"backup id"}`
 
-\`\`
-
 
 
