@@ -33,6 +33,7 @@
   * [Repair Server](sections/server/repair-server.md)
 * [File](sections/file/README.md)
   * [List directory](sections/file/list-directory.md)
+  * [Read File](sections/file/read-file.md)
   * [Create Folder](sections/file/create-folder.md)
   * [Edit File](sections/file/edit-file.md)
   * [Delete File](sections/file/delete-file.md)
