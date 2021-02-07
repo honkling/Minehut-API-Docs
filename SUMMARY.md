@@ -40,4 +40,8 @@
   * [Delete Folder](sections/file/delete-folder.md)
   * [Upload File](sections/file/upload-file.md)
   * [Upload World](sections/file/upload-world.md)
+* [Network](sections/network/README.md)
+  * [Top Servers](sections/network/top-servers.md)
+  * [Simple Stats](sections/network/simple-stats.md)
+  * [Homepage Stats](sections/network/homepage-stats.md)
 
