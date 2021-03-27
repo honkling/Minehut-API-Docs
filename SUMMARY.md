@@ -45,6 +45,10 @@
   * [Top Servers](sections/network/top-servers.md)
   * [Simple Stats](sections/network/simple-stats.md)
   * [Homepage Stats](sections/network/homepage-stats.md)
+  * [Distribution](sections/network/distribution.md)
 * [Admin](sections/admin/README.md)
   * [Proxy MOTD](sections/admin/motd.md)
+  * [Promotion](sections/admin/promotion.md)
+  * [Transferring Page Video](sections/admin/transferring-page-video.md)
+  * [Registrations/month](sections/admin/registrations-month.md)
 

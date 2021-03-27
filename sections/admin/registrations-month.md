@@ -1,16 +1,16 @@
 ---
-description: Modify the proxy's MOTD shown in the server list.
+description: Returns the amount of new accounts made in a month.
 ---
 
-# Proxy MOTD
+# Registrations/month
 
-{% api-method method="post" host="https://api.minehut.com" path="/network/motd" %}
+{% api-method method="get" host="https://api.minehut.com" path="/admin/stats/users/registrations/month" %}
 {% api-method-summary %}
-Proxy MOTD
+Registrations/month
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Modify the proxy's MOTD shown in the server list.
+Returns the amount of new accounts made in a month.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -24,12 +24,6 @@ Your Minehut token.
 Your Minehut session id.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="motd" type="string" required=true %}
-The new MOTD.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -39,7 +33,7 @@ The new MOTD.
 {% endapi-method-response-example-description %}
 
 ```
-{}
+ Unknown
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

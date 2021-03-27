@@ -1,16 +1,16 @@
 ---
-description: Modify the proxy's MOTD shown in the server list.
+description: Modify the video shown when you're starting a server from hibernation.
 ---
 
-# Proxy MOTD
+# Transferring Page Video
 
-{% api-method method="post" host="https://api.minehut.com" path="/network/motd" %}
+{% api-method method="post" host="https://api.minehut.com" path="/website/transferring/promotion" %}
 {% api-method-summary %}
-Proxy MOTD
+Transferring Page Video
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Modify the proxy's MOTD shown in the server list.
+Modify the video shown when you're starting a server from hibernation.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -26,8 +26,16 @@ Your Minehut session id.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="motd" type="string" required=true %}
-The new MOTD.
+{% api-method-parameter name="autoplay" type="integer" required=true %}
+Boolean as an integer \(1 = true, 0 = false\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="use\_cloudinary" type="boolean" required=true %}
+Whether or not the video should use the custom video player or a YouTube embed.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="video\_id" type="string" required=true %}
+The ID of the YouTube video. Leave empty if use\_cloudinary is set to true.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

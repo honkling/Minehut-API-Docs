@@ -1,16 +1,16 @@
 ---
-description: Modify the proxy's MOTD shown in the server list.
+description: Modify the promotion text in the top right of the panel.
 ---
 
-# Proxy MOTD
+# Promotion
 
-{% api-method method="post" host="https://api.minehut.com" path="/network/motd" %}
+{% api-method method="post" host="https://api.minehut.com" path="/website/navbar/promotion" %}
 {% api-method-summary %}
-Proxy MOTD
+Promotion
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Modify the proxy's MOTD shown in the server list.
+Modify the promotion text in the top right of the panel.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -26,8 +26,12 @@ Your Minehut session id.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="motd" type="string" required=true %}
-The new MOTD.
+{% api-method-parameter name="link" type="string" required=true %}
+The link that you're redirected to when you click on the promotion text.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="text" type="string" required=true %}
+The new promotion text.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
