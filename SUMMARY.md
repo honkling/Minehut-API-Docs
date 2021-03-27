@@ -6,6 +6,7 @@
 
 * [Server](sections/server/README.md)
   * [List Servers](sections/server/list.md)
+  * [List All Servers](sections/server/list-all-servers.md)
   * [Get Server](sections/server/get-server.md)
   * [All Data](sections/server/all-data.md)
   * [Create Server](sections/server/create-server.md)
@@ -44,4 +45,6 @@
   * [Top Servers](sections/network/top-servers.md)
   * [Simple Stats](sections/network/simple-stats.md)
   * [Homepage Stats](sections/network/homepage-stats.md)
+* [Admin](sections/admin/README.md)
+  * [Proxy MOTD](sections/admin/motd.md)
 

@@ -1,16 +1,16 @@
 ---
-description: List currently online servers (truncated.)
+description: List ALL currently online servers.
 ---
 
-# List Servers
+# List All Servers
 
-{% api-method method="get" host="https://api.minehut.com" path="/servers" %}
+{% api-method method="get" host="https://api.minehut.com" path="/servers\_all" %}
 {% api-method-summary %}
-Get All Servers
+List All Servers
 {% endapi-method-summary %}
 
 {% api-method-description %}
-List currently online servers \(truncated.\)
+List ALL currently online servers.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -23,7 +23,7 @@ List currently online servers \(truncated.\)
 {% endapi-method-response-example-description %}
 
 ```
-{"servers":[...],"total_players":(...),"total-servers":(...)}
+[{...}]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

@@ -4,17 +4,45 @@ description: Add a plugin to a server.
 
 # Install Plugin
 
-## Endpoint Info
+{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/install\_plugin" %}
+{% api-method-summary %}
+Install Plugin
+{% endapi-method-summary %}
 
-### URL Path
+{% api-method-description %}
+Add a plugin to a server.
+{% endapi-method-description %}
 
-POST `/server/{server-id}/install_plugin`
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="authorization" type="string" required=true %}
+Your Minehut token.
+{% endapi-method-parameter %}
 
-### Body
+{% api-method-parameter name="x-session-id" type="string" required=true %}
+Your Minehut session id.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 
-`{"plugin":"plugin id"}`
+{% api-method-body-parameters %}
+{% api-method-parameter name="plugin" type="string" required=true %}
+The ID of the plugin you want to install.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
 
-### Requires Authorization?
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-Yes.
+{% endapi-method-response-example-description %}
+
+```
+{}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 

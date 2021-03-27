@@ -4,15 +4,35 @@ description: Get a server's information using it's name or ID
 
 # Get Server
 
-## Endpoint Info
+{% api-method method="get" host="https://api.minehut.com" path="/server/{server-id}" %}
+{% api-method-summary %}
+Get Server
+{% endapi-method-summary %}
 
-### URL Path
+{% api-method-description %}
+Get a server's information using it's name or ID.
+{% endapi-method-description %}
 
-GET `/server/{server-id}`
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="byName" type="boolean" required=false %}
+Whether or not you want to search for the server using the name.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-GET `/server/{server-name}?byName=true`
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-### Response
+{% endapi-method-response-example-description %}
 
-`{"server":{...}}`
+```
+{"server":{...}}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
