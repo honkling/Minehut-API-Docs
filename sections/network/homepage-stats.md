@@ -4,20 +4,6 @@ description: Returns information for the homepage. (minehut.com)
 
 # Homepage Stats
 
-## Endpoint Info
-
-### URL Path
-
-GET `/network/homepage_stats`
-
-### Requires Authorization?
-
-No.
-
-### Response
-
-`{"server_count":(...),"user_count":(...)}`
-
 {% api-method method="get" host="https://api.minehut.com" path="/network/homepage\_stats" %}
 {% api-method-summary %}
 Homepage Stats

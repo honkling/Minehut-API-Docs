@@ -4,20 +4,6 @@ description: Returns a list of 5 servers sorted by player counts. (The top 5 ser
 
 # Top Servers
 
-## Endpoint Info
-
-### URL Path
-
-GET `/network/top_servers`
-
-### Requires Authorization?
-
-No.
-
-### Response
-
-`{"servers":[...]}`
-
 {% api-method method="get" host="https://api.minehut.com" path="/network/top\_servers" %}
 {% api-method-summary %}
 Top Servers
