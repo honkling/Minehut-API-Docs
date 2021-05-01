@@ -1,16 +1,16 @@
 ---
-description: Reset a server's world.
+description: Returns the amount of new credit subscriptions created in a month.
 ---
 
-# Reset World
+# New Subscriptions/month
 
-{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/reset\_world" %}
+{% api-method method="get" host="https://api.minehut.com" path="/admin/stats/subscriptions/new/month" %}
 {% api-method-summary %}
-Reset World
+New Subscriptions/month
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Reset a server's world 
+Returns the amount of new credit subscriptions created in a month.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -33,7 +33,7 @@ Your Minehut session id.
 {% endapi-method-response-example-description %}
 
 ```
-{}
+Unknown
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

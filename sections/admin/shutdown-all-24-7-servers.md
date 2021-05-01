@@ -1,16 +1,16 @@
 ---
-description: Reset a server's world.
+description: Forces all 24/7 servers to shutdown.
 ---
 
-# Reset World
+# Shutdown all 24/7 servers
 
-{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/reset\_world" %}
+{% api-method method="post" host="https://api.minehut.com" path="/admin/always\_online/shutdown" %}
 {% api-method-summary %}
-Reset World
+Shutdown all 24/7 servers
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Reset a server's world 
+Forces all 24/7 servers to shutdown.
 {% endapi-method-description %}
 
 {% api-method-spec %}

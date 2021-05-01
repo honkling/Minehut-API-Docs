@@ -16,6 +16,10 @@ Get a server's information using it's name or ID.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+{% api-method-parameter name="byId" type="boolean" required=false %}
+Whether or not you want to search for the server using the name.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="byName" type="boolean" required=false %}
 Whether or not you want to search for the server using the name.
 {% endapi-method-parameter %}

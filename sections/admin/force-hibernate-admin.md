@@ -1,16 +1,18 @@
 ---
-description: Reset a server's world.
+description: >-
+  Forces a server to stop and go into hibernation. Requires admin authentication
+  as this will shut down any server requested.
 ---
 
-# Reset World
+# Force hibernate \(admin\)
 
-{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/reset\_world" %}
+{% api-method method="post" host="https://api.minehut.com" path="/server/{server-name}/destroy\_service\_admin" %}
 {% api-method-summary %}
-Reset World
+Force hibernate \(admin\)
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Reset a server's world 
+Forces a server to shut down and go into hibernation.
 {% endapi-method-description %}
 
 {% api-method-spec %}

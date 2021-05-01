@@ -1,16 +1,16 @@
 ---
-description: Reset a server's world.
+description: Closes any server and suspends it.
 ---
 
-# Reset World
+# Suspend Server
 
-{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/reset\_world" %}
+{% api-method method="post" host="https://api.minehut.com" path="/admin/{server-name}/suspend" %}
 {% api-method-summary %}
-Reset World
+Suspend Server
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Reset a server's world 
+Closes any server and suspends it.
 {% endapi-method-description %}
 
 {% api-method-spec %}
