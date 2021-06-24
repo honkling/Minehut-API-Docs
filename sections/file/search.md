@@ -1,16 +1,20 @@
 ---
-description: List all files and folders in a directory.
+description: Searches for files and folders by name in a given directory.
 ---
 
-# List Folder
+# Search
 
-{% api-method method="get" host="https://api.minehut.com" path="/file/{server-id}/list/{path}" %}
+{% hint style="info" %}
+This endpoint is currently only available on Minehut's Developer Network, as it is currently being tested.
+{% endhint %}
+
+{% api-method method="get" host="https://api.dev.minehut.com" path="/file/{server-id}/search/{name}" %}
 {% api-method-summary %}
-List directory
+Search
 {% endapi-method-summary %}
 
 {% api-method-description %}
-List all files and folders in a directory.
+Searches for files and folders by name in a given directory.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -33,7 +37,7 @@ Your Minehut session id.
 {% endapi-method-response-example-description %}
 
 ```
-{"files":[{...}]}
+{"result":[{"id":"full path to file","name":"name of file with extension","directory":true/false},{...}]}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

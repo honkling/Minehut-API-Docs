@@ -1,16 +1,20 @@
 ---
-description: List all files and folders in a directory.
+description: Extracts the contents of a .zip file. The extension must be .zip.
 ---
 
-# List Folder
+# Unzip File
 
-{% api-method method="get" host="https://api.minehut.com" path="/file/{server-id}/list/{path}" %}
+{% hint style="info" %}
+This endpoint is currently only available on Minehut's Developer Network, as it is currently being tested.
+{% endhint %}
+
+{% api-method method="post" host="https://api.dev.minehut.com" path="/file/{server-id}/unzip/{path}" %}
 {% api-method-summary %}
-List directory
+Unzip File
 {% endapi-method-summary %}
 
 {% api-method-description %}
-List all files and folders in a directory.
+Extracts the contents of a .zip file. The extension must be .zip.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -33,7 +37,7 @@ Your Minehut session id.
 {% endapi-method-response-example-description %}
 
 ```
-{"files":[{...}]}
+{}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

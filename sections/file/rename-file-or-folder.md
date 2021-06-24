@@ -1,16 +1,20 @@
 ---
-description: List all files and folders in a directory.
+description: Renames a file or folder.
 ---
 
-# List Folder
+# Rename File or Folder
 
-{% api-method method="get" host="https://api.minehut.com" path="/file/{server-id}/list/{path}" %}
+{% hint style="info" %}
+This endpoint is currently only available on Minehut's Developer Network, as it is currently being tested.
+{% endhint %}
+
+{% api-method method="post" host="https://api.dev.minehut.com" path="/file/{server-id}/rename/{path}" %}
 {% api-method-summary %}
-List directory
+Rename File or Folder
 {% endapi-method-summary %}
 
 {% api-method-description %}
-List all files and folders in a directory.
+Renames a file or folder.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -24,6 +28,12 @@ Your Minehut token.
 Your Minehut session id.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="name" type="string" required=true %}
+The new name of the file or folder.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -33,7 +43,7 @@ Your Minehut session id.
 {% endapi-method-response-example-description %}
 
 ```
-{"files":[{...}]}
+{}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

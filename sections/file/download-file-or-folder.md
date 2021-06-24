@@ -1,16 +1,20 @@
 ---
-description: List all files and folders in a directory.
+description: Download a file or directory located on your Minehut server.
 ---
 
-# List Folder
+# Download File or Folder
 
-{% api-method method="get" host="https://api.minehut.com" path="/file/{server-id}/list/{path}" %}
+{% hint style="info" %}
+This endpoint is currently only available on Minehut's Developer Network, as it is currently being tested.
+{% endhint %}
+
+{% api-method method="post" host="https://api.dev.minehut.com" path="/file/{server-id}/download" %}
 {% api-method-summary %}
-List directory
+Download File or Directory
 {% endapi-method-summary %}
 
 {% api-method-description %}
-List all files and folders in a directory.
+Download a file or directory located on your Minehut server.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -24,6 +28,12 @@ Your Minehut token.
 Your Minehut session id.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="files" type="array" required=true %}
+An array of file paths to download.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -33,7 +43,7 @@ Your Minehut session id.
 {% endapi-method-response-example-description %}
 
 ```
-{"files":[{...}]}
+File (binary)
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
