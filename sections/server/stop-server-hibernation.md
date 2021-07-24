@@ -4,7 +4,7 @@ description: Force a server to enter hibernation.
 
 # Stop Server \(hibernation\)
 
-{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/destroy-service" %}
+{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/destroy\_service" %}
 {% api-method-summary %}
 Stop Server \(hibernation\)
 {% endapi-method-summary %}
