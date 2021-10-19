@@ -2,43 +2,24 @@
 description: Start a server from hibernation.
 ---
 
-# Start Server \(hibernation\)
+# Start Server (hibernation)
 
-{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/start\_service" %}
-{% api-method-summary %}
-Start Server \(hibernation\)
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/server/{server-id}/start_service" method="post" summary="Start Server (hibernation)" %}
+{% swagger-description %}
 Start a server from hibernation.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 Your Minehut token.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-session-id" type="string" required=true %}
+{% swagger-parameter in="header" name="x-session-id" type="string" %}
 Your Minehut session id.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

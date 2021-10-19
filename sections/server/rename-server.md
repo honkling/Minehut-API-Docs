@@ -4,45 +4,26 @@ description: Rename your Minehut server.
 
 # Rename Server
 
-{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/change\_name" %}
-{% api-method-summary %}
-Rename Server
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/server/{server-id}/change_name" method="post" summary="Rename Server" %}
+{% swagger-description %}
 Rename your Minehut server.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 Your Minehut token.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-session-id" type="string" required=true %}
+{% swagger-parameter in="header" name="x-session-id" type="string" %}
 Your Minehut session id.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="name" type="string" required=false %}
+{% swagger-parameter in="body" name="name" type="string" %}
 The new name for the server.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

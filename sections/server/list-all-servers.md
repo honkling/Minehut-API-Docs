@@ -4,29 +4,14 @@ description: List ALL currently online servers.
 
 # List All Servers
 
-{% api-method method="get" host="https://api.minehut.com" path="/servers\_all" %}
-{% api-method-summary %}
-List All Servers
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/servers_all" method="get" summary="List All Servers" %}
+{% swagger-description %}
 List ALL currently online servers.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 [{...}]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

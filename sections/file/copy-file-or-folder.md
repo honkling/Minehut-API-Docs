@@ -6,57 +6,34 @@ description: >-
 
 # Copy File or Folder
 
-{% hint style="info" %}
-This endpoint is currently only available on Minehut's Developer Network, as it is currently being tested.
-{% endhint %}
-
-{% api-method method="post" host="https://api.dev.minehut.com" path="/file/{server-id}/copy" %}
-{% api-method-summary %}
-Copy File or Folder
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/file/{server-id}/copy" method="post" summary="Copy File or Folder" %}
+{% swagger-description %}
 Copies a file or folder. When copying, a new file or folder will be created with the name and "-Copy" appended to the end.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 Your Minehut token.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-session-id" type="string" required=true %}
+{% swagger-parameter in="header" name="x-session-id" type="string" %}
 Your Minehut session id.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="copyPath" type="string" required=true %}
+{% swagger-parameter in="body" name="copyPath" type="string" %}
 A directory path to copy the files to. You cannot specify the name of the new file or folder here.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="files" type="array" required=true %}
+{% swagger-parameter in="body" name="files" type="array" %}
 Files and folders to copy.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="overwrite" type="boolean" required=true %}
+{% swagger-parameter in="body" name="overwrite" type="boolean" %}
 Whether or not to overwrite previously existing files.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

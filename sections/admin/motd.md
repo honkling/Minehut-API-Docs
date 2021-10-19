@@ -4,45 +4,26 @@ description: Modify the proxy's MOTD shown in the server list.
 
 # Proxy MOTD
 
-{% api-method method="post" host="https://api.minehut.com" path="/network/motd" %}
-{% api-method-summary %}
-Proxy MOTD
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/network/motd" method="post" summary="Proxy MOTD" %}
+{% swagger-description %}
 Modify the proxy's MOTD shown in the server list.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 Your Minehut token.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-session-id" type="string" required=true %}
+{% swagger-parameter in="header" name="x-session-id" type="string" %}
 Your Minehut session id.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="motd" type="string" required=true %}
+{% swagger-parameter in="body" name="motd" type="string" %}
 The new MOTD.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

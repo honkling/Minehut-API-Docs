@@ -4,49 +4,26 @@ description: Renames a file or folder.
 
 # Rename File or Folder
 
-{% hint style="info" %}
-This endpoint is currently only available on Minehut's Developer Network, as it is currently being tested.
-{% endhint %}
-
-{% api-method method="post" host="https://api.dev.minehut.com" path="/file/{server-id}/rename/{path}" %}
-{% api-method-summary %}
-Rename File or Folder
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/file/{server-id}/rename/{path}" method="post" summary="Rename File or Folder" %}
+{% swagger-description %}
 Renames a file or folder.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 Your Minehut token.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-session-id" type="string" required=true %}
+{% swagger-parameter in="header" name="x-session-id" type="string" %}
 Your Minehut session id.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="name" type="string" required=true %}
+{% swagger-parameter in="body" name="name" type="string" %}
 The new name of the file or folder.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

@@ -4,29 +4,14 @@ description: Distributed stats for Minehut
 
 # Distribution
 
-{% api-method method="get" host="https://api.minehut.com" path="/network/players/distribution" %}
-{% api-method-summary %}
-Distribution
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/network/players/distribution" method="get" summary="Distribution" %}
+{% swagger-description %}
 Returns distributed stats used in Minehut's admin panel.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {"bedrockTotal":(...),"javaTotal":(...),"bedrockLobby":(...),"bedrockPlayerServer":(...),"javaLobby":(...),"javaPlayerServer":(...)}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

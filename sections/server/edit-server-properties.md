@@ -4,49 +4,30 @@ description: Change the properties of a server.
 
 # Edit Server Properties
 
-{% api-method method="post" host="https://api.minehut.com" path="/server/{server-id}/edit\_server\_properties" %}
-{% api-method-summary %}
-Edit Server Properties
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/server/{server-id}/edit_server_properties" method="post" summary="Edit Server Properties" %}
+{% swagger-description %}
 Change the properties of a server.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="" type="string" required=true %}
+{% swagger-parameter in="header" name="" type="string" %}
 Your Minehut token.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="" type="string" required=true %}
+{% swagger-parameter in="header" name="" type="string" %}
 Your Minehut session id.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="field" type="string" required=true %}
+{% swagger-parameter in="body" name="field" type="string" %}
 The name of the property.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="value" type="string" required=true %}
+{% swagger-parameter in="body" name="value" type="string" %}
 The new value for the property.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

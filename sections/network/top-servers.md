@@ -4,29 +4,14 @@ description: Returns a list of 5 servers sorted by player counts. (The top 5 ser
 
 # Top Servers
 
-{% api-method method="get" host="https://api.minehut.com" path="/network/top\_servers" %}
-{% api-method-summary %}
-Top Servers
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/network/top_servers" method="get" summary="Top Servers" %}
+{% swagger-description %}
 Returns a list of the top 5 servers, sorted by player count.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {"servers":[...]}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

@@ -4,81 +4,62 @@ description: Creates a plugin that Minehut servers can install.
 
 # Create plugin
 
-{% api-method method="post" host="https://api.minehut.com" path="/plugins" %}
-{% api-method-summary %}
-Create plugin
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/plugins" method="post" summary="Create plugin" %}
+{% swagger-description %}
 Creates a plugin that Minehut servers can install.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-session-id" type="string" required=true %}
+{% swagger-parameter in="header" name="x-session-id" type="string" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="name" type="string" required=true %}
+{% swagger-parameter in="body" name="name" type="string" %}
 The name of the plugin.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="credits" type="integer" required=true %}
+{% swagger-parameter in="body" name="credits" type="integer" %}
 How many credits the plugin should cost.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="desc" type="string" required=true %}
+{% swagger-parameter in="body" name="desc" type="string" %}
 A short description of the plugin.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="desc\_extended" type="string" required=true %}
+{% swagger-parameter in="body" name="desc_extended" type="string" %}
 An extended description of the plugin.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="file\_name" type="string" required=true %}
+{% swagger-parameter in="body" name="file_name" type="string" %}
 The name of the jar file.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="config\_file\_name" type="string" required=true %}
+{% swagger-parameter in="body" name="config_file_name" type="string" %}
 The name of the jar file's config file.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="platform" type="string" required=true %}
+{% swagger-parameter in="body" name="platform" type="string" %}
 The platform for the plugin. Put "java" here.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="version" type="string" required=true %}
+{% swagger-parameter in="body" name="version" type="string" %}
 The version of the plugin.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="disabled" type="boolean" required=true %}
+{% swagger-parameter in="body" name="disabled" type="boolean" %}
 Whether the plugin should be disabled or not.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="media\_id" type="string" required=true %}
+{% swagger-parameter in="body" name="media_id" type="string" %}
 The media id for the plugin. What does this do? I have no idea. No plugins use it.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

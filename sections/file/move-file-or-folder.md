@@ -4,57 +4,34 @@ description: Move a file or folder somewhere else.
 
 # Move File or Folder
 
-{% hint style="info" %}
-This endpoint is currently only available on Minehut's Developer Network, as it is currently being tested.
-{% endhint %}
-
-{% api-method method="post" host="https://api.dev.minehut.com" path="/file/{server-id}/move" %}
-{% api-method-summary %}
-Move File or Folder
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/file/{server-id}/move" method="post" summary="Move File or Folder" %}
+{% swagger-description %}
 Move a file or folder somewhere else.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 Your Minehut token.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-session-id" type="string" required=true %}
+{% swagger-parameter in="header" name="x-session-id" type="string" %}
 Your Minehut session id.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="files" type="array" required=true %}
+{% swagger-parameter in="body" name="files" type="array" %}
 A list of file paths to move.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="movePath" type="string" required=true %}
+{% swagger-parameter in="body" name="movePath" type="string" %}
 A file path to move the files to.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="overwrite" type="boolean" required=true %}
+{% swagger-parameter in="body" name="overwrite" type="boolean" %}
 Whether or not existing files should be overwritten by new files when being moved.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {"overwriteFiles":[...],"prevPath":"..."}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

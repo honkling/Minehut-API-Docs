@@ -1,60 +1,41 @@
 ---
-description: 'Search for information of Minehut users by Minecraft IGN, email, or User ID.'
+description: Search for information of Minehut users by Minecraft IGN, email, or User ID.
 ---
 
 # User Info
 
-{% api-method method="get" host="https://api.minehut.com" path="/v2/admin/users" %}
-{% api-method-summary %}
-User Info
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/v2/admin/users" method="get" summary="User Info" %}
+{% swagger-description %}
 Search for information of Minehut users by Minecraft IGN, email, or User ID.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="q" type="string" required=true %}
+{% swagger-parameter in="path" name="q" type="string" %}
 Your search query.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="role" type="string" required=true %}
-A filter of users based on role. This can either be "" \(anybody\), "creator" \(market creator\), or "admin" \(minehut admin\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="path" name="role" type="string" %}
+A filter of users based on role. This can either be "" (anybody), "creator" (market creator), or "admin" (minehut admin)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="limit" type="integer" required=true %}
+{% swagger-parameter in="path" name="limit" type="integer" %}
 How many users should appear in one page.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="offset" type="integer" required=true %}
+{% swagger-parameter in="path" name="offset" type="integer" %}
 Counts from 0. Tells the api which page of users it should return.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 Your Minehut token.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-session-id" type="string" required=true %}
+{% swagger-parameter in="header" name="x-session-id" type="string" %}
 Your Minehut session id.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 Unknown. All known is, it returns the user email, the user id, the Minecraft IGN, the credits belonging to the account, and the roles associated with the account.
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

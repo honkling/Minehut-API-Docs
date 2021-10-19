@@ -4,39 +4,22 @@ description: Get a server's information using it's name or ID
 
 # Get Server
 
-{% api-method method="get" host="https://api.minehut.com" path="/server/{server-id}" %}
-{% api-method-summary %}
-Get Server
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.minehut.com" path="/server/{server-id}" method="get" summary="Get Server" %}
+{% swagger-description %}
 Get a server's information using it's name or ID.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="byId" type="boolean" required=false %}
+{% swagger-parameter in="path" name="byId" type="boolean" %}
 Whether or not you want to search for the server using the name.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="byName" type="boolean" required=false %}
+{% swagger-parameter in="path" name="byName" type="boolean" %}
 Whether or not you want to search for the server using the name.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {"server":{...}}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}
