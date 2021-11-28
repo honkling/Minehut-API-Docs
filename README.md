@@ -13,7 +13,7 @@ Currently, there is not a good way to login programmatically, so you will need t
 1. Open the Minehut panel
 2. Press CTRL + Shift + I on the panel to open Developer Tools
 3. Click on the tab named `Application` in Developer Tools.
-4. Double click `Local Storage`, and a new tidbit labeled `https://minehut.com` will show up. Click that.
+4. Double click `Local Storage`, and a new panel labeled `https://minehut.com` will show up. Click that.
 5. Now write down the values of the fields `minehut_auth_token` and `minehut_session_id` as your token and session id respectively.
 6. &#x20;Now, when making a request to an API endpoint that requires authorization, pass your token as the `authorization` header, and your session id as the `x-session-id` header.
 7. If all has been done correctly, you should now be authorized.
