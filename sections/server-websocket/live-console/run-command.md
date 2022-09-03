@@ -1,5 +1,5 @@
 ---
-description: Execute a command from console.
+description: Writes to STDIN. (C2S)
 ---
 
 # Run command

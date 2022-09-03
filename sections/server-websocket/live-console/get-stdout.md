@@ -1,8 +1,8 @@
 ---
-description: Returns up to(?) the latest 179 messages from logs.
+description: Returns the latest 180 lines from STDOUT.
 ---
 
-# Get latest messages
+# Get STDOUT
 
 {% tabs %}
 {% tab title="Request" %}

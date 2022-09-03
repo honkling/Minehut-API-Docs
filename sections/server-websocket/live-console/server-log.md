@@ -1,8 +1,8 @@
 ---
-description: New output from the server.
+description: Indicates a write to STDOUT. (S2C)
 ---
 
-# STD
+# Server log
 
 {% tabs %}
 {% tab title="Response" %}

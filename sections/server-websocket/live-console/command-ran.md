@@ -1,5 +1,5 @@
 ---
-description: The command being ran.
+description: Indicates a write to STDIN. (S2C)
 ---
 
 # Command ran
